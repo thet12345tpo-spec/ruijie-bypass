@@ -990,13 +990,11 @@ class RuijieLoginManager:
             return None
 
         step1_url = (
-            f"https://portal-as.ruijienetworks.com/api/auth/wifidog"
-            f"?stage=portal&gw_id=e05d542aa0d9&gw_sn=ZASB02L004808"
-            f"&gw_address={self.ip}&gw_port=2060&ip=192.168.31.75"
-            f"&mac={self.mac}&slot_num=16&nasip=192.168.1.225"
-            f"&ssid=VLAN30&ustate=0&mac_req=1&url=http%3A%2F%2F{self.ip}%2F"
-            f"&chap_id=%5C074"
-            f"&chap_challenge=%5C375%5C362%5C061%5C353%5C071%5C006%5C213%5C363%5C361%5C205%5C014%5C260%5C003%5C246%5C031%5C103"
+            f"https://portal-as.ruijienetworks.com/auth/wifidogAuth/login/"
+            f"?gw_id=984a6b458027&gw_sn=H1T078800132C&gw_address=192.168.110.1&gw_port=2060"
+            f"&ip={self.ip}&mac={self.mac}&slot_num=33&nasip=192.168.1.161&ssid=VLAN233&ustate=0&mac_req=1"
+            f"&url=http%3A%2F%2F192.168.0.1%2F&chap_id=%5C016"
+            f"&chap_challenge=%5C135%5C061%5C367%5C376%5C225%5C324%5C217%5C041%5C213%5C145%5C002%5C251%5C074%5C104%5C267%5C152"
         )
 
         headers = {
