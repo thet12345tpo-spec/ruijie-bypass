@@ -224,7 +224,7 @@ async def execute(decode_access_data, ip):
                         ping = await get_ping()
                         print(f"{b}[*] Current Ping is {ping}")
                         Line()
-                    time.sleep(10)
+                    time.sleep(5)
                 time.sleep(5)
         except KeyboardInterrupt:
             print(f"{y}[*] User cancel called")
