@@ -992,9 +992,9 @@ class RuijieLoginManager:
         step1_url = (
             f"https://portal-as.ruijienetworks.com/api/auth/wifidog"
             f"?stage=portal&gw_id=e05d542aa0d9&gw_sn=ZASB02L004808"
-            f"&gw_address=192.168.30.1&gw_port=2060&ip=192.168.31.75"
-            f"&mac=a4:ff:9f:01:64:d0&slot_num=16&nasip=192.168.1.225"
-            f"&ssid=VLAN30&ustate=0&mac_req=1&url=http%3A%2F%2F192.168.0.1%2F"
+            f"&gw_address={self.ip}&gw_port=2060&ip=192.168.31.75"
+            f"&mac={self.mac}&slot_num=16&nasip=192.168.1.225"
+            f"&ssid=VLAN30&ustate=0&mac_req=1&url=http%3A%2F%2F{self.ip}%2F"
             f"&chap_id=%5C074"
             f"&chap_challenge=%5C375%5C362%5C061%5C353%5C071%5C006%5C213%5C363%5C361%5C205%5C014%5C260%5C003%5C246%5C031%5C103"
         )
